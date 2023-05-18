@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Accordion from "./components/Accordion"
+ 
+ function App() {
+    const items = [
+        {
+            id: "khkjh",
+            label: "This is a test",
+            content: "this stuff is cool man this stuff is cool man this stuff is cool man this stuff is cool man this stuff is cool man this stuff is cool man this stuff is cool man"
+        },
+        {
+            id: "wehfg",
+            label: "This is a test and another one",
+            content: "this stuff is cool man this stuff is cool man this stuff is cool man this stuff is cool man this stuff is cool man this stuff is cool man this stuff is cool man this stuff is cool man"
+        },
+        {
+            id: "fwefh",
+            label: "This is a test and a third one",
+            content: "this stuff is cool man this stuff is cool man this stuff is cool man this stuff is cool man this stuff is cool man this stuff is cool man this stuff is cool man this stuff is cool man"
+        },
+    ]
+    return <Accordion items={items } />
+ }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+ export default App 
